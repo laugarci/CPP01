@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:19:04 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/14 13:47:07 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/14 17:08:31 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ZOMBIE_HPP
 
 #include <string>
+#include <iostream>
 
 class Zombie {
 private:

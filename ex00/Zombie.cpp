@@ -6,18 +6,15 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:34:02 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/14 13:50:10 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/14 17:08:14 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-#include "Zombie.hpp"
-#include <iostream>
-
-Zombie::Zombie(std::string name) : name(name)
+Zombie::Zombie(std::string name)
 {
-
+    this->name = name;
 }
 
 void Zombie::announce() {
