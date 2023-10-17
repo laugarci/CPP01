@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:19:04 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/14 17:08:31 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:06:55 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 #include <string>
 #include <iostream>
 
-class Zombie {
+class Zombie
+{
 private:
     std::string name;
 
