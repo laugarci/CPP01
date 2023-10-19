@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:46:34 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/19 12:16:27 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/19 12:19:17 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <fstream>  
 #include <string>
 
-void replace_words(std::string& str, const std::string& to_replace, const std::string& new_word)
+int replace_words(std::string& str, const std::string& to_replace, const std::string& new_word)
 {
 	size_t check = str.find(to_replace);	
 	if (check != std::string::npos)
@@ -29,8 +29,9 @@ void replace_words(std::string& str, const std::string& to_replace, const std::s
 	else
 	{
 	    std::cout << to_replace << " was not found in the text" << std::endl;
-		return ;
+		return 1;
 	}
+	return 0;
 }
 
 int main(int ac, char **av)
@@ -46,10 +47,13 @@ int main(int ac, char **av)
 	{
 		std::string file_content((std::istreambuf_iterator<char>(infile)), std::istreambuf_iterator<char>());
 		infile.close();
-		replace_words(file_content, to_replace, new_word);
-		std::ofstream outfile(outputname);
-		if (outfile.is_open())
-			outfile << file_content;
+		if (!replace_words(file_content, to_replace, new_word))
+		{
+			std::ofstream outfile(outputname);
+			if (outfile.is_open())
+				outfile << file_content;
+			outfile.close();
+		}
 	}
 	else
 	{
