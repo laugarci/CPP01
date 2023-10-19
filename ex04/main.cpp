@@ -6,13 +6,11 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:46:34 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/19 12:21:44 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/19 12:35:56 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream> 
-#include <fstream>  
-#include <string>
+#include "sed.h"
 
 int replace_words(std::string& str, const std::string& to_replace, const std::string& new_word)
 {
