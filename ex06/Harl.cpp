@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 12:42:50 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/23 16:25:39 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:28:15 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,20 @@ void	Harl::complain(std::string level)
 	int i;
 	std::string options[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	void (Harl::*funcArray[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	int total;
 
+	total = 0;
 	i = 0;
 	while (i < 4)
 	{
 		if (options[i] == level)
-		{
-			(this->*funcArray[i])();
-			break ;
-		}
+			total = i;
+		i++;
+	}
+	i = 0;
+	while (i <= total)
+	{
+		(this->*funcArray[i])();
 		i++;
 	}
 	if (i == 4)
