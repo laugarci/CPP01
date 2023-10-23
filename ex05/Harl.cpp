@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 12:42:50 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/23 15:58:37 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:03:14 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,6 @@ void	Harl::complain(std::string level)
 		}
 		i++;
 	}
+	if (i == 4)
+		std::cout << BOLD"[ No message ]"RESET << std::endl;
 }
