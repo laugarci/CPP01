@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 12:42:56 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/20 12:13:18 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/10/23 15:56:16 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define HARL_HPP
 
 #include <iostream>
+
+#define BOLD "\x1B[1m"
+#define RESET "\x1B[0m"
 
 class Harl
 {
