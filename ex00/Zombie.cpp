@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 13:19:04 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/24 10:13:16 by laugarci         ###   ########.fr       */
+/*   Created: 2023/10/24 10:10:18 by laugarci          #+#    #+#             */
+/*   Updated: 2023/10/24 10:13:55 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#include "Zombie.hpp"
 
-#include <string>
-#include <iostream>
-
-class Zombie
+Zombie::Zombie( std::string name )
 {
-	private:
-		std::string _name;
-	
-	public:
-		Zombie( std::string name );
-		~Zombie( void );
-		void	announce( void );
-};
+	_name = name;
+}
 
-#endif
+Zombie::~Zombie( void )
+{
+	std::cout << _name << " has been destroyed" << std::endl;
+}
+
+void	Zombie::announce( void )
+{
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
