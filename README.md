@@ -2,7 +2,7 @@
 
 ## Ex00 - diferencia entre stack y heap
 
-### Stack:
+### - Stack:
 
 Almacena variables locales, como enteros, punteros y estructuras de datos pequeñas.
 La vida útil de los datos en el stack está limitada al alcance de la función que los crea.
@@ -24,7 +24,7 @@ El tamaño de la pila generalmente se establece al principio del programa y es f
 
 Se utiliza para almacenar variables locales y para gestionar la ejecución de funciones.
 
-### Heap:
+### - Heap:
 
 Se utiliza para asignar memoria dinámicamente usando new (C++) o malloc (C).
 Los datos en el montón pueden persistir más allá del alcance de la función que los creó.
@@ -46,6 +46,6 @@ El tamaño del montón puede crecer o reducirse durante la ejecución del progra
 
 Se utiliza para almacenar datos que no tienen un tamaño conocido en tiempo de compilación o que deben persistir más allá del alcance de una función.
 
-### Elección:
+### - Elección:
 La elección entre el stack y el heap depende de la vida útil, el tamaño y la forma en que se utilizarán los datos.
 La pila es más eficiente para datos locales y de corta duración, mientras que el montón es más apropiado para datos dinámicos y de mayor duración.
