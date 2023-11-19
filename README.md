@@ -12,7 +12,7 @@ La vida útil de los datos en el stack está limitada al alcance de la función 
 El stack es una región de la memoria que se organiza como una estructura de datos de tipo "último en entrar, primero en salir".
 Los datos en el stack se almacenan en bloques contiguos de memoria, y la gestión de la memoria es manejada automáticamente por el compilador.
 
-### Asignación y Liberación Rápida:
+#### Asignación y Liberación Rápida:
 
 La asignación y liberación de memoria en la pila son muy rápidas, ya que solo implica mover el puntero de la pila hacia arriba o hacia abajo.
 
