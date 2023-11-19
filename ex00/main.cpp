@@ -15,12 +15,12 @@
 
 int main()
 {
-	Zombie *heapZombie = new Zombie("Zombie1");
-	heapZombie->announce();
-	
-	Zombie stackZombie("Zombie2");
-	stackZombie.announce();
-	
-	delete heapZombie;
-	return (0);
+    Zombie* zombieHeap = newZombie("Heap Zombie");
+    zombieHeap->announce();
+    delete zombieHeap;
+
+    randomChump("Stack Zombie");
+
+    return 0;
 }
+

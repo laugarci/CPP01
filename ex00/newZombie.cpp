@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:44:21 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/14 13:50:33 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/11/19 18:04:04 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ Zombie *newZombie(std::string name)
 {
     return (new Zombie(name));
 }
-
