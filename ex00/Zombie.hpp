@@ -5,29 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 13:19:04 by laugarci          #+#    #+#             */
-/*   Updated: 2023/11/19 18:14:35 by laugarci         ###   ########.fr       */
+/*   Created: 2023/12/07 17:09:53 by laugarci          #+#    #+#             */
+/*   Updated: 2023/12/09 16:03:16 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
 
-#include <string>
 #include <iostream>
+#include <string>
 
-class Zombie
-{
-	private:
-		std::string _name;
-	
+class Zombie {
 	public:
 		Zombie(std::string name);
-		~Zombie(void);
-		void	announce(void) const;
+		~Zombie();
+		void announce(void) const;
+	private:
+		std::string cosa;
+		std::string _name;
 };
 
-Zombie*			newZombie( std::string name );
+Zombie			*newZombie( std::string name );
 void			randomChump( std::string name );
 
 #endif
+

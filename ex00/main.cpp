@@ -1,13 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 13:43:11 by laugarci          #+#    #+#             */
-//   Updated: 2023/10/17 17:53:21 by laugarci         ###   ########.fr       //
+/*   Created: 2023/12/07 17:09:42 by laugarci          #+#    #+#             */
+/*   Updated: 2023/12/09 16:03:21 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +14,10 @@
 
 int main()
 {
-    Zombie* zombieHeap = newZombie("Heap Zombie");
-    zombieHeap->announce();
-    delete zombieHeap;
+	Zombie* heapZombie = newZombie("Zombie1");
+    heapZombie->announce();
+    delete heapZombie;
 
-    randomChump("Stack Zombie");
-
-    return 0;
+    randomChump("Zombie2");
+	return (0);
 }
-

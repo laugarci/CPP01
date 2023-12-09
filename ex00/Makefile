@@ -6,14 +6,13 @@
 #    By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/14 13:17:51 by laugarci          #+#    #+#              #
-#    Updated: 2023/11/19 18:09:11 by laugarci         ###   ########.fr        #
+#    Updated: 2023/12/07 17:09:33 by laugarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brainz
+NAME = BraiiiiiiinnnzzzZ
 
 SRC_FILES = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
-
 OBJ_DIR = objs/
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 OBJS = $(addprefix $(OBJ_DIR), $(OBJ_FILES))
