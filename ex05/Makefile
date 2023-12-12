@@ -6,11 +6,11 @@
 #    By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/14 13:17:51 by laugarci          #+#    #+#              #
-#    Updated: 2023/10/19 12:41:47 by laugarci         ###   ########.fr        #
+#    Updated: 2023/12/12 16:24:24 by laugarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME =  sed
+NAME = Harl
 
 SRC_FILES = main.cpp Harl.cpp
 OBJ_DIR = objs/
