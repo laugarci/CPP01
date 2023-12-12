@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 17:09:53 by laugarci          #+#    #+#             */
-/*   Updated: 2023/12/11 12:41:07 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/12 14:49:37 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ Zombie			*newZombie( std::string name );
 void			randomChump( std::string name );
 
 #endif
-

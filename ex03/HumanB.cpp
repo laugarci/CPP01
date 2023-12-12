@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 14:55:23 by laugarci          #+#    #+#             */
-/*   Updated: 2023/12/12 12:30:08 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/12 15:06:27 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 HumanB::HumanB(std::string name)
 {
+	if (name.empty())
+		name = "????";
 	_name = name;
 }
 
