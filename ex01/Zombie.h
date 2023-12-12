@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 18:43:13 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/17 18:43:54 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/11 14:47:57 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 # include "Zombie.hpp"
 
-Zombie* zombieHorde( int N, std::string name );
+Zombie *zombieHorde( int N, std::string name );
 
 #endif

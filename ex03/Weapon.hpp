@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:56:22 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/18 14:53:17 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/11 15:11:58 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class Weapon
 {
 	private:
-		std::string type;
+		std::string _type;
 	
 	public:
 		Weapon( std::string type );

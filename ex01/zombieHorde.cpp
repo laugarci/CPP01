@@ -6,14 +6,14 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 18:27:38 by laugarci          #+#    #+#             */
-/*   Updated: 2023/12/09 18:06:47 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/12 10:40:46 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 #include "Zombie.h"
 
-Zombie* zombieHorde( int N, std::string name )
+Zombie *zombieHorde( int N, std::string name )
 {
 	Zombie	*zombie;
 	int		i;
@@ -32,7 +32,7 @@ Zombie* zombieHorde( int N, std::string name )
 	i = 0;
 	while (i < N)
 	{
-		zombie[i].assign_name(name);
+		zombie[i].assignName(name);
 		i++;
 	}
 	return (zombie);

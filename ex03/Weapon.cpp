@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 11:57:05 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/18 14:54:16 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/12 10:41:44 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@ Weapon::~Weapon()
 {
 }
 
-Weapon::Weapon(std::string _type)
+Weapon::Weapon(std::string type)
 {
-	type = _type;
+	_type = type;
 }
 
 const std::string	Weapon::getType() const
 {
-	return (type);
+	return (_type);
 }
 
-void		Weapon::setType(std::string _type)
+void		Weapon::setType(std::string type)
 {
-	type = _type;
+	_type = type;
 }

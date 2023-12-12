@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 18:25:20 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/17 18:44:12 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/11 14:48:02 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Zombie
 	public:
 		Zombie();
 		~Zombie();
-		void			assign_name(std::string name);
+		void			assignName(std::string name);
 		void			announce(void);
 
 	private:

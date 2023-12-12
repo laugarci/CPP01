@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 17:09:53 by laugarci          #+#    #+#             */
-/*   Updated: 2023/12/09 16:03:16 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/11 12:41:07 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ class Zombie {
 		~Zombie();
 		void announce(void) const;
 	private:
-		std::string cosa;
 		std::string _name;
 };
 
