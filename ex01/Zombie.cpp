@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:34:02 by laugarci          #+#    #+#             */
-/*   Updated: 2023/12/11 14:54:09 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/12 14:17:47 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Zombie::Zombie()
 
 void	Zombie::assignName(std::string name)
 {
-	_name = name;
+	this->_name = name;
 }
 
 void Zombie::announce()
