@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 12:42:50 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/23 16:28:15 by laugarci         ###   ########.fr       */
+/*   Updated: 2023/12/13 12:02:15 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	Harl::complain(std::string level)
 	void (Harl::*funcArray[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	int total;
 
-	total = 0;
+	total = -1;
 	i = 0;
 	while (i < 4)
 	{
@@ -64,6 +64,6 @@ void	Harl::complain(std::string level)
 		(this->*funcArray[i])();
 		i++;
 	}
-	if (i == 4)
+	if (total == -1)
 		std::cout << BOLD"[ No message ]"RESET << std::endl;
 }
