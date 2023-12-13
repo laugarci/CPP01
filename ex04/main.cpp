@@ -5,59 +5,54 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 15:46:34 by laugarci          #+#    #+#             */
-/*   Updated: 2023/10/19 12:35:56 by laugarci         ###   ########.fr       */
+/*   Created: 2023/12/13 15:07:57 by laugarci          #+#    #+#             */
+/*   Updated: 2023/12/13 15:59:04 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <fstream>
 #include "sed.h"
 
-int replace_words(std::string& str, const std::string& to_replace, const std::string& new_word)
+bool	openFile(std::fstream &file, const char *name, std::ios_base::openmode mode)
 {
-	size_t check = str.find(to_replace);	
-	if (check != std::string::npos)
+	file.open(name, mode);
+	if (file.is_open() == false)
 	{
-		while (check != std::string::npos)
-		{
-			str.erase(check, to_replace.length());
-			str.insert(check, new_word);
-			check = str.find(to_replace);
-		}
+		std::cerr << "Error opening file" << std::endl;
+		return (false);
 	}
-	else
+	return (true);
+}
+
+bool	check_arguments(int ac, char **av)
+{
+	if (ac != 4)
 	{
-	    std::cout << to_replace << " was not found in the text" << std::endl;
-		return (1);
+		std::cout << "Usage: ./Sed <filename> <s1> <s2>" << std::endl;
+		return (false);
 	}
-	return (0);
+	if (!av[1] || !av[2] || !av[3])
+	{
+		std::cerr << "Invalid arguments." << std::endl;
+		return (false);
+	}
 }
 
 int main(int ac, char **av)
 {
-	if (ac != 4)
-		return (1);
-	std::ifstream infile(av[1]);
-	std::string outputname = std::string(av[1]) + ".replace";
-	std::string to_replace = av[2];
-	std::string new_word = av[3];
-	
-	if (infile.is_open())
-	{
-		std::string file_content((std::istreambuf_iterator<char>(infile)), std::istreambuf_iterator<char>());
-		infile.close();
-		if (!replace_words(file_content, to_replace, new_word))
-		{
-			std::ofstream outfile(outputname);
-			if (outfile.is_open())
-				outfile << file_content;
-			outfile.close();
-		}
-	}
-	else
-	{
-		std::cout << "Error, the file could not be opened or the file does not exist" << std::endl;
-		return (1);
-	}
-	return (0);
-}
+	std::fstream	outfile;
+	std::string		outfileName;
 
+	if (check_arguments(ac, av))
+		return (1);
+	if (ac != 4)
+	{
+		std::cout << "Usage: ./Sed <filename> <s1> <s2>" << std::endl;
+		return (1);
+	}
+	outfileName = (std::string(av[1]) + ".replace").c_str();
+	if (openFile(av[1], av[1], std::ios_base::in))
+		return (1);
+	if (openFile(outfile, outfileName, std::ios_base::out))
+		return (1);
+}
